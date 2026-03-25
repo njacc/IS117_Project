@@ -1,0 +1,69 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    /*: 1px solid red;*/
+}
+
+    a:hover,a:focus{
+        font-weight: bold;
+    }
+
+header{
+    & #pageIcon{
+        float: left;
+        margin: .5em;
+    }
+    & h1{
+        color: black;
+    }
+    & h1:hover{
+        color: #3574d4;
+        transition: color .25s cubic-bezier(.13,1.1,.87,.93);
+    }
+    & #underHeading1Text{
+        font-style: italic;
+    }
+}
+
+main{
+    & p,.collapsible,.contentDiv{
+        margin-left: .5em;
+        font-size: 1.125em;
+    }
+    & .collapsible{
+        padding: .15em 1em;
+        cursor: pointer;
+        text-align: center;
+        outline: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 0;
+        background-color: #e3f6ff;
+    }
+    & .collapsible:hover, .collapsible:focus, .collapsible:active{
+        transition: background-color .5s cubic-bezier(.13,1.1,.87,.93), color .5s cubic-bezier(.13,1.1,.87,.93);
+        color: #4d4dff;
+        background-color: #c2d9ff;
+    }
+    & .contentDiv{
+        padding-left: .3em;
+        list-style-type: square;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .5s cubic-bezier(.13,1.1,.87,.93);
+        background-color: #f9f9ff;
+    }
+    border: 1px solid black;
+    clear: left;
+}
+
+footer{
+    & #footerText{
+        margin-left: .5em;
+        white-space: nowrap;
+        font-size: 1.125em;
+    }
+}
